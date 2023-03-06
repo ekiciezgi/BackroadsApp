@@ -1,16 +1,14 @@
 import React from 'react'
-
+import aboutImg from '../images/about.jpeg'
+import { Title } from './Title'
 export const About = () => {
     return (
         <section class="section" id="about">
-            <div class="section-title">
-                <h2>about <span>us</span></h2>
-            </div>
-
+            <Title title='about' subtitle='us'></Title>
             <div class="section-center about-center">
                 <div class="about-img">
                     <img
-                        src="./images/about.jpeg"
+                        src={aboutImg}
                         class="about-photo"
                         alt="awesome beach"
                     />
@@ -27,7 +25,7 @@ export const About = () => {
                         quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
                         unde dolor?
                     </p>
-                    <a href="#" class="btn">read more</a>
+                    <a href="#about" class="btn">read more</a>
                 </article>
             </div>
         </section>
